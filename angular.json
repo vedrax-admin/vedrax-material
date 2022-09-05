@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "vedrax-material-utility": {
+      "projectType": "library",
+      "root": "projects/vedrax-material-utility",
+      "sourceRoot": "projects/vedrax-material-utility/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/vedrax-material-utility/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/vedrax-material-utility/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/vedrax-material-utility/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/vedrax-material-utility/src/test.ts",
+            "tsConfig": "projects/vedrax-material-utility/tsconfig.spec.json",
+            "karmaConfig": "projects/vedrax-material-utility/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "c205e442-a234-45a2-8f81-6af581509ac8"
+  }
+}
