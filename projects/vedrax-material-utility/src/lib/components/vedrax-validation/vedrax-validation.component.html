@@ -1,0 +1,7 @@
+<ng-container *ngIf="control && control.invalid && (control.dirty || control.touched)">
+    <div *ngFor="let validation of validations">
+        <div *ngIf="getError(validation.validationName)">
+            {{validation.validationMessage}}
+        </div>
+    </div>
+</ng-container>
