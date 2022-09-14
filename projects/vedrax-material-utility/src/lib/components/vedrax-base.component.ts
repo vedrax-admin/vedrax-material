@@ -1,7 +1,9 @@
 import { Input, Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatFormFieldAppearance } from '@angular/material/form-field';
 
 import { DescriptorFormControl } from '../descriptor/descriptor-form-control';
+import { ConfigService } from '../services/config.service';
 
 /**
  * Base class for each control
@@ -22,7 +24,14 @@ export class VedraxBaseComponent {
      */
     @Input() descriptor: DescriptorFormControl = new DescriptorFormControl();
 
-    constructor() { }
+    /**
+     * The form field appearance used by default
+     */
+    formControlAppearance: MatFormFieldAppearance = 'fill';
+
+    constructor(configService: ConfigService) { 
+        this.formControlAppearance = configService.getFormControlAppearance();
+    }
 
     /**
      * Helper method for checking in a template if a property exists. 

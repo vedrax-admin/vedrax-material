@@ -11,6 +11,7 @@ import { VedraxMaterialModule } from './material/vedrax-material.module';
 //components
 import { VedraxValidationComponent } from './components/vedrax-validation/vedrax-validation.component';
 import { VedraxInputComponent } from './components/vedrax-input/vedrax-input.component';
+import { Configuration, VEDRAX_CONFIG } from './config/configuration';
 
 
 @NgModule({
@@ -36,9 +37,18 @@ import { VedraxInputComponent } from './components/vedrax-input/vedrax-input.com
     VedraxMaterialModule,
     VedraxValidationComponent,
     VedraxInputComponent
+  ],
+  providers: [
   ]
 })
-export class VedraxMaterialUtilityModule { }
+export class VedraxMaterialUtilityModule { 
+  static forRoot(configuration: Configuration): ModuleWithProviders<VedraxMaterialUtilityModule> {
+    return {
+      ngModule: VedraxMaterialUtilityModule,
+      providers: [{ provide: VEDRAX_CONFIG, useValue: configuration }]
+    };
+  }
+}
 
 // AOT compilation support
 export function httpTranslateLoader(http: HttpClient) {
