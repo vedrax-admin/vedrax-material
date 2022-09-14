@@ -1,11 +1,11 @@
 <mat-form-field *ngIf="descriptor">
+    <mat-label>{{descriptor.controlLabel | translate}}</mat-label>
     <input matInput 
         [hidden]="hasProperty('hidden')"
         [type]="hasProperty('type')" 
         [readonly]="hasProperty('readOnly')"
-        [placeholder]="descriptor.controlLabel" 
         [formControl]="control">
-    <mat-hint *ngIf="descriptor.controlHint">{{descriptor.controlHint}}</mat-hint>
+    <mat-hint *ngIf="descriptor.controlHint">{{descriptor.controlHint | translate}}</mat-hint>
     <mat-error>
         <vedrax-validation [control]="control" [validations]="descriptor.controlValidations"></vedrax-validation>
     </mat-error>
