@@ -16,5 +16,6 @@ export class DescriptorValidation {
     /**
      * Error message
      */
-    validationMessage: string = '';
+    validationMessageAsTranslationKey: string = '';
+
 }

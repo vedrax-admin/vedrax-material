@@ -13,4 +13,9 @@ export class DescriptorOption {
      * The option value
      */
     value: string = '';
+
+    /**
+     * Is the value is a translation key ?
+     */
+    valueAsTranslationKey: boolean = false;
 }

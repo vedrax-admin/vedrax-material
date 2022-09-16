@@ -1,0 +1,20 @@
+<mat-form-field *ngIf="descriptor" [appearance]="formControlAppearance">
+    <mat-label>{{descriptor.controlLabel | translate}}</mat-label>
+    <mat-select [formControl]="control" [multiple]="hasProperty('multiple')">
+        <ng-container *ngFor="let option of options">
+            <mat-option *ngIf="option.valueAsTranslationKey; else optionWithoutTranslation" [value]="option.key">
+                {{option.value | translate}}
+            </mat-option>
+
+            <ng-template #optionWithoutTranslation>
+                <mat-option [value]="option.key">
+                    {{option.value}}
+                </mat-option>
+            </ng-template>
+        </ng-container>
+    </mat-select>
+    <mat-hint *ngIf="descriptor.controlHint">{{descriptor.controlHint | translate}}</mat-hint>
+    <mat-error>
+        <vedrax-validation [control]="control" [validations]="descriptor.controlValidations"></vedrax-validation>
+    </mat-error>
+</mat-form-field>

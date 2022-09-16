@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfigService } from '../../services/config.service';
 import { VedraxBaseComponent } from '../vedrax-base.component';
 
 /**
@@ -8,4 +9,10 @@ import { VedraxBaseComponent } from '../vedrax-base.component';
   selector: 'vedrax-input',
   templateUrl: './vedrax-input.component.html'
 })
-export class VedraxInputComponent extends VedraxBaseComponent {}
+export class VedraxInputComponent extends VedraxBaseComponent {
+
+  constructor(configService: ConfigService) {
+    super(configService);
+  }
+
+}

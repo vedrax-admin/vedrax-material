@@ -1,4 +1,4 @@
-import { Input, Component } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
 
@@ -12,7 +12,7 @@ import { ConfigService } from '../services/config.service';
     selector: 'vedrax-base',
     template: ''
 })
-export class VedraxBaseComponent {
+export class VedraxBaseComponent implements OnInit {
 
     /**
      * The form control
@@ -29,8 +29,11 @@ export class VedraxBaseComponent {
      */
     formControlAppearance: MatFormFieldAppearance = 'fill';
 
-    constructor(configService: ConfigService) { 
-        this.formControlAppearance = configService.getFormControlAppearance();
+    constructor(public configService: ConfigService) {
+    }
+
+    ngOnInit(): void {
+        this.formControlAppearance = this.configService.getFormControlAppearance();
     }
 
     /**

@@ -6,18 +6,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-//angular library
+//angular library + config
 import { VedraxMaterialModule } from './material/vedrax-material.module';
+import { Configuration, VEDRAX_CONFIG } from './config/configuration';
 //components
 import { VedraxValidationComponent } from './components/vedrax-validation/vedrax-validation.component';
 import { VedraxInputComponent } from './components/vedrax-input/vedrax-input.component';
-import { Configuration, VEDRAX_CONFIG } from './config/configuration';
+import { VedraxSelectComponent } from './components/vedrax-select/vedrax-select.component';
+import { ConfigService } from './services/config.service';
+
 
 
 @NgModule({
   declarations: [
     VedraxValidationComponent,
-    VedraxInputComponent
+    VedraxInputComponent,
+    VedraxSelectComponent
   ],
   imports: [
     CommonModule,
@@ -36,9 +40,11 @@ import { Configuration, VEDRAX_CONFIG } from './config/configuration';
   exports: [
     VedraxMaterialModule,
     VedraxValidationComponent,
-    VedraxInputComponent
+    VedraxInputComponent,
+    VedraxSelectComponent
   ],
   providers: [
+    ConfigService
   ]
 })
 export class VedraxMaterialUtilityModule { 
