@@ -4,3 +4,4 @@ export * from './comparator-type';
 export * from './control-types';
 export * from './input-types';
 export * from './msg-level';
+export * from './role.enum';

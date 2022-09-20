@@ -2,7 +2,7 @@ import { Input, Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
 
-import { DescriptorFormControl } from '../descriptor/descriptor-form-control';
+import { DescriptorFormControl } from '../entities/descriptor-form-control';
 import { ConfigService } from '../services/config.service';
 
 /**

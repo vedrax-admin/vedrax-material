@@ -1,3 +1,5 @@
+export * from './api-status';
+export * from './controlsPerGroup';
 export * from './descriptor-action';
 export * from './descriptor-activate';
 export * from './descriptor-column';
@@ -11,3 +13,11 @@ export * from './descriptor-page';
 export * from './descriptor-property';
 export * from './descriptor-table';
 export * from './descriptor-validation';
+export * from './lov-endpoint';
+export * from './matrixColumn';
+export * from './msg';
+export * from './nvp';
+export * from './response-wrapper';
+export * from './table-selection-item';
+export * from './user-dto';
+export * from './user.model';

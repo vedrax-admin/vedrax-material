@@ -3,7 +3,7 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable, forkJoin, of } from 'rxjs';
 
 import { ApiMethod } from '../enum/api-methods';
-import { DescriptorForm } from '../descriptor/descriptor-form';
+import { DescriptorForm } from '../entities/descriptor-form';
 
 export class FormDataWithContentType {
     form: FormData = new FormData();

@@ -4,7 +4,8 @@
 
 export * from './lib/components';
 export * from './lib/config';
-export * from './lib/descriptor';
+export * from './lib/entities';
 export * from './lib/enum';
 export * from './lib/services';
+export * from './lib/material/vedrax-material.module';
 

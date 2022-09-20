@@ -1,5 +1,5 @@
 import { DescriptorAction } from './descriptor-action';
-import { NVP } from '../shared/nvp';
+import { NVP } from './nvp';
 
 
 /**

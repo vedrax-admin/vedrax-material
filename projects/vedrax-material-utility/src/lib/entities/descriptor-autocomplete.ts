@@ -1,5 +1,5 @@
 import { DescriptorFormControl } from '.';
-import { NVP } from '../shared/nvp';
+import { NVP } from './nvp';
 
 export class DescriptorAutocomplete {
     

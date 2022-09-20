@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable, of } from "rxjs";
 import { map, tap } from "rxjs/operators";
-import { DescriptorFormControl, DescriptorOption } from "../descriptor";
+import { DescriptorFormControl, DescriptorOption } from "../entities";
 import { VedraxApiService } from "./vedrax-api.service";
 
 /**
