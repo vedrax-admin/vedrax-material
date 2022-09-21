@@ -41,6 +41,16 @@ export class DescriptorFormControl {
     controlValue?: any;
 
     /**
+     * The optional prefix to be included before the input tag
+     */
+    controlPrefix?: string;
+
+    /**
+     * The optional prefix to be included after the input tag
+     */
+    controlSuffix?: string;
+
+    /**
      * List of optional validations
      */
     controlValidations?: DescriptorValidation[];
