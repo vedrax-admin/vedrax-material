@@ -11,9 +11,11 @@ import { VedraxValidationComponent } from './components/vedrax-validation/vedrax
 import { VedraxInputComponent } from './components/vedrax-input/vedrax-input.component';
 import { VedraxSelectComponent } from './components/vedrax-select/vedrax-select.component';
 import { ConfigService } from './services/config.service';
+import { VedraxCheckboxComponent } from './components/vedrax-checkbox/vedrax-checkbox.component';
 
 @NgModule({
   declarations: [
+    VedraxCheckboxComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxSelectComponent
@@ -28,6 +30,7 @@ import { ConfigService } from './services/config.service';
   ],
   exports: [
     VedraxMaterialModule,
+    VedraxCheckboxComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxSelectComponent
