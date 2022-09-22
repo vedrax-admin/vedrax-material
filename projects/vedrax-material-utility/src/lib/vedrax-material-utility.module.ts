@@ -14,11 +14,13 @@ import { ConfigService } from './services/config.service';
 import { VedraxCheckboxComponent } from './components/vedrax-checkbox/vedrax-checkbox.component';
 import { VedraxChipsComponent } from './components/vedrax-chips/vedrax-chips.component';
 import { VedraxDatepickerComponent } from './components/vedrax-datepicker/vedrax-datepicker.component';
+import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-picker/vedrax-date-range-picker.component';
 
 @NgModule({
   declarations: [
     VedraxCheckboxComponent,
     VedraxChipsComponent,
+    VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
@@ -36,6 +38,7 @@ import { VedraxDatepickerComponent } from './components/vedrax-datepicker/vedrax
     VedraxMaterialModule,
     VedraxCheckboxComponent,
     VedraxChipsComponent,
+    VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxValidationComponent,
     VedraxInputComponent,

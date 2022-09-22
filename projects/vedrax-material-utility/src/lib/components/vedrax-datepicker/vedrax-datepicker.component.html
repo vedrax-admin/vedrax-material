@@ -1,4 +1,4 @@
-<mat-form-field *ngIf="descriptor">
+<mat-form-field *ngIf="descriptor" [appearance]="formControlAppearance">
     <mat-label>{{descriptor.controlLabel | translate}}</mat-label>
     <input matInput [matDatepicker]="picker"
         [formControl]="control" [disabled]="hasProperty('disabled')">
