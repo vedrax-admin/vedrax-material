@@ -1,0 +1,5 @@
+<mat-radio-group *ngIf="descriptor" [formControl]="control" [attr.aria-label]="descriptor.controlLabel">
+    <mat-radio-button *ngFor="let option of descriptor.controlOptions" [value]="option.key">
+        {{option.valueAsTranslationKey ? (option.value | translate) : option.value}}
+    </mat-radio-button>
+</mat-radio-group>

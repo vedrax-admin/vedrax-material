@@ -15,6 +15,7 @@ import { VedraxCheckboxComponent } from './components/vedrax-checkbox/vedrax-che
 import { VedraxChipsComponent } from './components/vedrax-chips/vedrax-chips.component';
 import { VedraxDatepickerComponent } from './components/vedrax-datepicker/vedrax-datepicker.component';
 import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-picker/vedrax-date-range-picker.component';
+import { VedraxRadioComponent } from './components/vedrax-radio/vedrax-radio.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-p
     VedraxDatepickerComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
+    VedraxRadioComponent,
     VedraxSelectComponent
   ],
   imports: [
@@ -42,6 +44,7 @@ import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-p
     VedraxDatepickerComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
+    VedraxRadioComponent,
     VedraxSelectComponent
   ],
   providers: [
