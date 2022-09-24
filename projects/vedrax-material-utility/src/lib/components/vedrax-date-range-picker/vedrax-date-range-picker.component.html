@@ -8,6 +8,6 @@
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-date-range-picker #picker></mat-date-range-picker>
 
-    <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">{{'invalid.start.date' | translate}}</mat-error>
-    <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">{{'invalid.end.date' | translate}}</mat-error>
+    <mat-error *ngIf="range.controls['start'].hasError('matStartDateInvalid')">{{'invalid.start.date' | translate}}</mat-error>
+    <mat-error *ngIf="range.controls['end'].hasError('matEndDateInvalid')">{{'invalid.end.date' | translate}}</mat-error>
 </mat-form-field>
