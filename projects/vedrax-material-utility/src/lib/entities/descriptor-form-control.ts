@@ -56,7 +56,7 @@ export class DescriptorFormControl {
     controlValidations?: DescriptorValidation[];
 
     /**
-     * List of optional options used mainly in the 'SELECT' control
+     * List of optional options used mainly in the 'SELECT' or 'AUTOCOMPLETE' controls
      */
     controlOptions?: DescriptorOption[];
 

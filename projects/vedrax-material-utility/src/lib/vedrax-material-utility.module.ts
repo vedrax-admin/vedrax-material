@@ -16,9 +16,11 @@ import { VedraxChipsComponent } from './components/vedrax-chips/vedrax-chips.com
 import { VedraxDatepickerComponent } from './components/vedrax-datepicker/vedrax-datepicker.component';
 import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-picker/vedrax-date-range-picker.component';
 import { VedraxRadioComponent } from './components/vedrax-radio/vedrax-radio.component';
+import { VedraxAutocompleteComponent } from './components/vedrax-autocomplete/vedrax-autocomplete.component';
 
 @NgModule({
   declarations: [
+    VedraxAutocompleteComponent,
     VedraxCheckboxComponent,
     VedraxChipsComponent,
     VedraxDateRangePickerComponent,
@@ -37,6 +39,7 @@ import { VedraxRadioComponent } from './components/vedrax-radio/vedrax-radio.com
     RouterModule
   ],
   exports: [
+    VedraxAutocompleteComponent,
     VedraxMaterialModule,
     VedraxCheckboxComponent,
     VedraxChipsComponent,

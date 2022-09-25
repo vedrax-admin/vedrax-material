@@ -1,5 +1,6 @@
 
 export * from './vedrax-base.component';
+export * from './vedrax-autocomplete/vedrax-autocomplete.component';
 export * from './vedrax-checkbox/vedrax-checkbox.component';
 export * from './vedrax-chips/vedrax-chips.component';
 export * from './vedrax-date-range-picker/vedrax-date-range-picker.component';
