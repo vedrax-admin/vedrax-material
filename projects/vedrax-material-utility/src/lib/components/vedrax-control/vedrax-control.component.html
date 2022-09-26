@@ -1,0 +1,31 @@
+<div *ngIf="descriptor" [ngSwitch]="descriptor.controlType">
+
+    <!-- handling autocomplete -->
+    <vedrax-autocomplete *ngSwitchCase="'autocomplete'" [descriptor]="descriptor" [control]="formComponent"
+        (isReady)=checkIfOptionsAvailable($event)></vedrax-autocomplete>
+
+    <!-- handling checkbox -->
+    <vedrax-checkbox *ngSwitchCase="'checkbox'" [descriptor]="descriptor" [control]="formComponent">
+    </vedrax-checkbox>
+
+    <!-- handling chips component -->
+    <vedrax-chips *ngSwitchCase="'chips'" [descriptor]="descriptor" [form]="form"></vedrax-chips>
+
+    <!-- handling text input -->
+    <vedrax-input *ngSwitchCase="'input'" [descriptor]="descriptor" [control]="formComponent"></vedrax-input>
+
+    <!-- handling select -->
+    <vedrax-select *ngSwitchCase="'select'" [descriptor]="descriptor" [control]="formComponent"
+        (isReady)=checkIfOptionsAvailable($event)></vedrax-select>
+
+    <!-- handling datepicker -->
+    <vedrax-datepicker *ngSwitchCase="'datepicker'" [descriptor]="descriptor" [control]="formComponent">
+    </vedrax-datepicker>
+
+    <!-- handling range datepicker -->
+    <vedrax-date-range-picker *ngSwitchCase="'datepickerRange'" [descriptor]="descriptor" [range]="form"></vedrax-date-range-picker>
+
+    <!-- handling radio button -->
+    <vedrax-radio *ngSwitchCase="'radioButton'" [descriptor]="descriptor" [control]="formComponent"></vedrax-radio>
+
+</div>

@@ -3,6 +3,7 @@ export * from './vedrax-base.component';
 export * from './vedrax-autocomplete/vedrax-autocomplete.component';
 export * from './vedrax-checkbox/vedrax-checkbox.component';
 export * from './vedrax-chips/vedrax-chips.component';
+export * from './vedrax-control/vedrax-control.component';
 export * from './vedrax-date-range-picker/vedrax-date-range-picker.component';
 export * from './vedrax-datepicker/vedrax-datepicker.component';
 export * from './vedrax-input/vedrax-input.component';
