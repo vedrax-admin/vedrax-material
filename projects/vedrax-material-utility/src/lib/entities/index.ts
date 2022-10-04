@@ -21,3 +21,5 @@ export * from './response-wrapper';
 export * from './table-selection-item';
 export * from './user-dto';
 export * from './user.model';
+export * from './vedrax-file-error';
+export * from './vedrax-file';

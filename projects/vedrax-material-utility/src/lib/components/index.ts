@@ -10,4 +10,5 @@ export * from './vedrax-dynamic/vedrax-dynamic.component';
 export * from './vedrax-input/vedrax-input.component';
 export * from './vedrax-radio/vedrax-radio.component';
 export * from './vedrax-select/vedrax-select.component';
+export * from './vedrax-upload/vedrax-upload.component';
 export * from './vedrax-validation/vedrax-validation.component';

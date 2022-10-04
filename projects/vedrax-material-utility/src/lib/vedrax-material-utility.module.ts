@@ -19,6 +19,7 @@ import { VedraxRadioComponent } from './components/vedrax-radio/vedrax-radio.com
 import { VedraxAutocompleteComponent } from './components/vedrax-autocomplete/vedrax-autocomplete.component';
 import { VedraxControlComponent } from './components/vedrax-control/vedrax-control.component';
 import { VedraxDynamicComponent } from './components/vedrax-dynamic/vedrax-dynamic.component';
+import { VedraxUploadComponent } from './components/vedrax-upload/vedrax-upload.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { VedraxDynamicComponent } from './components/vedrax-dynamic/vedrax-dynam
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxRadioComponent,
-    VedraxSelectComponent
+    VedraxSelectComponent,
+    VedraxUploadComponent
   ],
   imports: [
     CommonModule,
@@ -54,7 +56,8 @@ import { VedraxDynamicComponent } from './components/vedrax-dynamic/vedrax-dynam
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxRadioComponent,
-    VedraxSelectComponent
+    VedraxSelectComponent,
+    VedraxUploadComponent
   ],
   providers: [
     ConfigService

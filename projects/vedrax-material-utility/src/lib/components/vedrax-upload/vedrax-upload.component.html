@@ -1,0 +1,7 @@
+<div *ngIf="descriptor">
+    <button type="button" mat-stroked-button color="primary" (click)="vedraxFileInput.click()">
+        <mat-icon>add</mat-icon>
+        {{descriptor.controlLabel | translate}}
+    </button>
+    <input type="file" hidden #vedraxFileInput (change)="uploadFiles($event)">
+</div>
