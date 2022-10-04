@@ -4,6 +4,7 @@
 export enum ControlType {
     checkbox = "checkbox",
     datepicker = "datepicker",
+    datepickerRange = "datepickerRange",
     input = "input",
     radioButton = "radioButton",
     select = "select",
