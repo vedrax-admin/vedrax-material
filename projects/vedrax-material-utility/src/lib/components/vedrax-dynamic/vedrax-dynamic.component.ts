@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormGroup, FormArray, FormControl, AbstractControl } from '@angular/forms';
+import { FormGroup, FormArray } from '@angular/forms';
 
 import { DescriptorFormControl } from '../../entities/descriptor-form-control';
 import { FormService } from '../../services/form.service';
@@ -30,16 +30,6 @@ export class VedraxDynamicComponent implements OnInit {
    */
   get formArray(): FormArray {
     return this.form.get(this.descriptor.controlName) as FormArray;
-  }
-
-  /**
-   * Get child control
-   * @param control 
-   * @param descriptor 
-   * @returns 
-   */
-  getChildControl(control: AbstractControl, descriptor: DescriptorFormControl): FormControl {
-    return this.formService.getComponent(control, descriptor.controlName);
   }
 
   /**

@@ -11,7 +11,7 @@
                 </mat-expansion-panel-header>
 
                 <vedrax-control *ngFor="let ctrl of descriptor.controlChildren" [descriptor]="ctrl"
-                    [control]="getChildControl(control, ctrl)"></vedrax-control>
+                    [form]="form"></vedrax-control>
 
                 <mat-action-row>
 
