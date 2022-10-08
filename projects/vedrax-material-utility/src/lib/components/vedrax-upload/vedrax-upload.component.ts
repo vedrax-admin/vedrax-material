@@ -1,7 +1,6 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { DescriptorFormControl, VedraxFile } from '../../entities';
-
-const INVALID_SIZE = 'Taille de fichier invalide';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { DescriptorFormControl } from '../../entities';
 
 @Component({
   selector: 'vedrax-upload',
@@ -10,8 +9,11 @@ const INVALID_SIZE = 'Taille de fichier invalide';
 })
 export class VedraxUploadComponent implements OnInit {
 
+  @Input() form: FormGroup = new FormGroup({});
   @Input() descriptor: DescriptorFormControl = new DescriptorFormControl();
-  @Output() uploadedFile: EventEmitter<VedraxFile> = new EventEmitter();
+
+  fileName: string = '';
+  displayMessage: string = 'file.unavailable';
 
   constructor() { }
 
@@ -31,17 +33,25 @@ export class VedraxUploadComponent implements OnInit {
 
       const { type, name, size } = file;
 
+      //check size
       if (!this.isValidSize(size, this.descriptor.controlSizeLimit)) {
-        this.uploadedFile.emit({ error: { name, errorMessage: INVALID_SIZE } });
+        this.displayMessage = 'file.limit.error';
         return;
       }
 
+      //check type
       if (!this.isValidType(this.descriptor.controlAccept, type)) {
-        this.uploadedFile.emit({ error: { name, errorMessage: `Accepted type : ${this.descriptor.controlAccept}` } });
+        this.displayMessage = 'file.type.error';
         return;
       }
 
-      this.uploadedFile.emit({ file });
+      const control = this.form.get(this.descriptor.controlName);
+
+      if (control) {
+        this.fileName = name;
+        control.setValue(file);
+      }
+
     }
   }
 
