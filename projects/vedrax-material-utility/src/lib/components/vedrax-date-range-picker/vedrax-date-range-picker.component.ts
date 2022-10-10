@@ -1,9 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
-import { DescriptorFormControl } from '../../entities/descriptor-form-control';
-import { ConfigService } from '../../services/config.service';
-import { FormService } from '../../services/form.service';
+import { DescriptorFormControl } from '../../entities';
+import { ConfigService } from '../../services';
 
 /**
  * Class that defines a date range picker component

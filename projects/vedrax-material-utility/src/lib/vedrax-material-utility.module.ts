@@ -20,6 +20,7 @@ import { VedraxAutocompleteComponent } from './components/vedrax-autocomplete/ve
 import { VedraxControlComponent } from './components/vedrax-control/vedrax-control.component';
 import { VedraxDynamicComponent } from './components/vedrax-dynamic/vedrax-dynamic.component';
 import { VedraxUploadComponent } from './components/vedrax-upload/vedrax-upload.component';
+import { VedraxFormControlComponent } from './components/vedrax-form-control/vedrax-form-control.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { VedraxUploadComponent } from './components/vedrax-upload/vedrax-upload.
     VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxDynamicComponent,
+    VedraxFormControlComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxRadioComponent,
@@ -53,6 +55,7 @@ import { VedraxUploadComponent } from './components/vedrax-upload/vedrax-upload.
     VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxDynamicComponent,
+    VedraxFormControlComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
     VedraxRadioComponent,

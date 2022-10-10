@@ -1,0 +1,9 @@
+<div *ngIf="descriptor" [ngSwitch]="descriptor.controlType">
+
+    <!-- common form controls -->
+    <vedrax-control [descriptor]="descriptor" [form]="form"></vedrax-control>
+
+    <!-- handling dynamic form creation -->
+    <vedrax-dynamic *ngSwitchCase="'arrayOfControls'" [descriptor]="descriptor" [form]="form"></vedrax-dynamic>
+
+</div>

@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormArray } from '@angular/forms';
 
-import { DescriptorFormControl } from '../../entities/descriptor-form-control';
-import { FormService } from '../../services/form.service';
+import { DescriptorFormControl } from '../../entities';
+import { FormService } from '../../services';
 
 /**
  * Class that defines a dynamic component

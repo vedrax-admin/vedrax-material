@@ -1,8 +1,7 @@
 import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { DescriptorOption } from '../../entities/descriptor-option';
-import { LovService } from '../../services/lov.service';
-import { ConfigService } from '../../services/config.service';
+import { DescriptorOption } from '../../entities';
+import { LovService, ConfigService } from '../../services';
 import { VedraxBaseComponent } from '../vedrax-base.component';
 
 /**

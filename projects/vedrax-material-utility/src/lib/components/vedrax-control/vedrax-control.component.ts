@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { DescriptorFormControl } from '../../entities/descriptor-form-control';
+import { DescriptorFormControl } from '../../entities';
 
 /**
  * Class that defines a generic component according to the control type

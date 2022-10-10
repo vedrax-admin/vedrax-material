@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { FormGroup, FormArray, FormControl } from '@angular/forms';
-import { DescriptorFormControl } from '../../entities/descriptor-form-control';
+import { DescriptorFormControl } from '../../entities';
 
 @Component({
   selector: 'vedrax-chips',
