@@ -1,5 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
+import { MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
 import { Configuration, VEDRAX_CONFIG } from '../config/configuration';
 
 /**
@@ -17,6 +18,20 @@ export class ConfigService {
      */
     getFormControlAppearance(): MatFormFieldAppearance {
         return this.config.formComponentAppearance ? this.config.formComponentAppearance : 'fill';
+    }
+
+    /**
+     * @returns the default horizontal position used in snackbar
+     */
+    getHorizontalPosition(): MatSnackBarHorizontalPosition {
+        return this.config.snackBarHorizontalPosition ? this.config.snackBarHorizontalPosition : 'start';
+    }
+
+    /**
+     * @returns the default vertical position used in snackbar
+     */
+    getVerticalPosition(): MatSnackBarVerticalPosition {
+        return this.config.snackBarVerticalPosition ? this.config.snackBarVerticalPosition : 'bottom';
     }
 
 }

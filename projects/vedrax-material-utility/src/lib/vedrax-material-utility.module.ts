@@ -1,4 +1,4 @@
-import { ErrorHandler, ModuleWithProviders, NgModule } from '@angular/core';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -6,21 +6,25 @@ import { RouterModule } from '@angular/router';
 import { VedraxMaterialModule } from './material/vedrax-material.module';
 import { Configuration, VEDRAX_CONFIG } from './config/configuration';
 import { NgxTranslateModule } from './translate.module';
+
+import { ConfigService } from './services';
+
 //components
-import { VedraxValidationComponent } from './components/vedrax-validation/vedrax-validation.component';
-import { VedraxInputComponent } from './components/vedrax-input/vedrax-input.component';
-import { VedraxSelectComponent } from './components/vedrax-select/vedrax-select.component';
-import { ConfigService } from './services/config.service';
-import { VedraxCheckboxComponent } from './components/vedrax-checkbox/vedrax-checkbox.component';
-import { VedraxChipsComponent } from './components/vedrax-chips/vedrax-chips.component';
-import { VedraxDatepickerComponent } from './components/vedrax-datepicker/vedrax-datepicker.component';
-import { VedraxDateRangePickerComponent } from './components/vedrax-date-range-picker/vedrax-date-range-picker.component';
-import { VedraxRadioComponent } from './components/vedrax-radio/vedrax-radio.component';
-import { VedraxAutocompleteComponent } from './components/vedrax-autocomplete/vedrax-autocomplete.component';
-import { VedraxControlComponent } from './components/vedrax-control/vedrax-control.component';
-import { VedraxDynamicComponent } from './components/vedrax-dynamic/vedrax-dynamic.component';
-import { VedraxUploadComponent } from './components/vedrax-upload/vedrax-upload.component';
-import { VedraxFormControlComponent } from './components/vedrax-form-control/vedrax-form-control.component';
+import { VedraxValidationComponent,
+  VedraxInputComponent,
+  VedraxSelectComponent,
+  VedraxCheckboxComponent,
+  VedraxChipsComponent,
+  VedraxDatepickerComponent,
+  VedraxDateRangePickerComponent,
+  VedraxRadioComponent,
+  VedraxAutocompleteComponent, 
+  VedraxControlComponent, 
+  VedraxDynamicComponent, 
+  VedraxUploadComponent, 
+  VedraxFormControlComponent, 
+  VedraxControlsComponent 
+} from './components';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { VedraxFormControlComponent } from './components/vedrax-form-control/ved
     VedraxCheckboxComponent,
     VedraxChipsComponent,
     VedraxControlComponent,
+    VedraxControlsComponent,
     VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxDynamicComponent,
@@ -52,6 +57,7 @@ import { VedraxFormControlComponent } from './components/vedrax-form-control/ved
     VedraxCheckboxComponent,
     VedraxChipsComponent,
     VedraxControlComponent,
+    VedraxControlsComponent,
     VedraxDateRangePickerComponent,
     VedraxDatepickerComponent,
     VedraxDynamicComponent,
