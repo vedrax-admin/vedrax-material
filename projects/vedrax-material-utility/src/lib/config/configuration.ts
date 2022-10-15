@@ -22,6 +22,16 @@ export interface Configuration {
      */
     snackBarVerticalPosition: MatSnackBarVerticalPosition;
 
+    /**
+     * The login endpoint
+     */
+    loginEndpoint: string;
+
+    /**
+     * The verify email address endpoint
+     */
+    verifyEmailAddressEndpoint: string;
+
 }
 
 export const VEDRAX_CONFIG = new InjectionToken<Configuration>('VEDRAX_CONFIG');

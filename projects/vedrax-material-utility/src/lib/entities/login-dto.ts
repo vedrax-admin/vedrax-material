@@ -1,7 +1,7 @@
 /**
  * User credentials DTO
  */
-export class UserDto {
+export class LoginDto {
     /**
      * Username
      */

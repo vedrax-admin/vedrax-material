@@ -34,4 +34,18 @@ export class ConfigService {
         return this.config.snackBarVerticalPosition ? this.config.snackBarVerticalPosition : 'bottom';
     }
 
+    /**
+     * @returns the login endpoint
+     */
+    getLoginEnpoint():string {
+        return this.config.loginEndpoint ? this.config.loginEndpoint : '/login';
+    }
+
+    /**
+     * @returns the login endpoint
+     */
+     getVerifyEmailAddressEnpoint():string {
+        return this.config.verifyEmailAddressEndpoint ? this.config.verifyEmailAddressEndpoint : '/verify';
+    }
+
 }
