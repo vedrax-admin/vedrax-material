@@ -34,6 +34,10 @@ export class ConfigService {
         return this.config.snackBarVerticalPosition ? this.config.snackBarVerticalPosition : 'bottom';
     }
 
+    getSnackBarDuration():number{
+        return this.config.snackBarDuration ? this.config.snackBarDuration : 2000;
+    }
+
     /**
      * @returns the login endpoint
      */

@@ -13,7 +13,7 @@ export class SnackbarService {
     open(message: string): void {
         if (message) {
             this.snackBar.open(message, 'X', {
-                duration: 2000,
+                duration: this.configService.getSnackBarDuration(),
                 horizontalPosition: this.configService.getHorizontalPosition(),
                 verticalPosition: this.configService.getVerticalPosition()
             });
@@ -23,7 +23,7 @@ export class SnackbarService {
     showError(message: string): void {
         if (message) {
             this.snackBar.open(message, 'X', {
-                duration: 2000,
+                duration: this.configService.getSnackBarDuration(),
                 horizontalPosition: this.configService.getHorizontalPosition(),
                 verticalPosition: this.configService.getVerticalPosition(),
                 panelClass: ['error']

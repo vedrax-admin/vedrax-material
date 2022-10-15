@@ -23,6 +23,11 @@ export interface Configuration {
     snackBarVerticalPosition: MatSnackBarVerticalPosition;
 
     /**
+     * Snack bar duration
+     */
+    snackBarDuration: number;
+
+    /**
      * The login endpoint
      */
     loginEndpoint: string;
