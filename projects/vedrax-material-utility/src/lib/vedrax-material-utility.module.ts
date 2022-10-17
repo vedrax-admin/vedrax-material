@@ -12,6 +12,7 @@ import { ConfigService } from './services';
 //components
 import { VedraxValidationComponent,
   VedraxInputComponent,
+  VedraxLoaderComponent,
   VedraxSelectComponent,
   VedraxCheckboxComponent,
   VedraxChipsComponent,
@@ -39,6 +40,7 @@ import { VedraxValidationComponent,
     VedraxFormControlComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
+    VedraxLoaderComponent,
     VedraxRadioComponent,
     VedraxSelectComponent,
     VedraxUploadComponent
@@ -64,6 +66,7 @@ import { VedraxValidationComponent,
     VedraxFormControlComponent,
     VedraxValidationComponent,
     VedraxInputComponent,
+    VedraxLoaderComponent,
     VedraxRadioComponent,
     VedraxSelectComponent,
     VedraxUploadComponent
