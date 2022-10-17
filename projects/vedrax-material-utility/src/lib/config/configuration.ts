@@ -37,6 +37,16 @@ export interface Configuration {
      */
     verifyEmailAddressEndpoint: string;
 
+    /**
+     * The redirection page used when no permission
+     */
+    redirectionPageWhenNoPermission: string;
+
+    /**
+     * The home page
+     */
+    homePage: string;
+
 }
 
 export const VEDRAX_CONFIG = new InjectionToken<Configuration>('VEDRAX_CONFIG');

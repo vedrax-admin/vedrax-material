@@ -34,22 +34,36 @@ export class ConfigService {
         return this.config.snackBarVerticalPosition ? this.config.snackBarVerticalPosition : 'bottom';
     }
 
-    getSnackBarDuration():number{
+    getSnackBarDuration(): number {
         return this.config.snackBarDuration ? this.config.snackBarDuration : 2000;
     }
 
     /**
      * @returns the login endpoint
      */
-    getLoginEnpoint():string {
+    getLoginEnpoint(): string {
         return this.config.loginEndpoint ? this.config.loginEndpoint : '/login';
     }
 
     /**
      * @returns the login endpoint
      */
-     getVerifyEmailAddressEnpoint():string {
+    getVerifyEmailAddressEnpoint(): string {
         return this.config.verifyEmailAddressEndpoint ? this.config.verifyEmailAddressEndpoint : '/verify';
+    }
+
+    /**
+     * @returns the redirection page used when no permission
+     */
+    getRedirectionPageWhenNoPermission(): string {
+        return this.config.redirectionPageWhenNoPermission ? this.config.redirectionPageWhenNoPermission : '/';
+    }
+
+    /**
+     * @returns the home page URL
+     */
+    getHomePage():string {
+        return this.config.homePage ? this.config.homePage : '/';
     }
 
 }
