@@ -3,7 +3,6 @@ import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS
 import { Observable } from 'rxjs';
 
 import { AuthenticationService, ConfigService } from '../services';
-import { environment } from '../..';
 
 // case insensitive check against config and value
 const startsWithAny = (arr: string[] = []) => (value = '') => {
