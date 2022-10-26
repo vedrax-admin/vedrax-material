@@ -26,6 +26,7 @@ import { VedraxValidationComponent,
   VedraxFormControlComponent, 
   VedraxControlsComponent 
 } from './components';
+import { errorInterceptorProvider } from './interceptors';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { VedraxValidationComponent,
     VedraxUploadComponent
   ],
   providers: [
-    ConfigService
+    ConfigService,
+    errorInterceptorProvider
   ]
 })
 export class VedraxMaterialUtilityModule {

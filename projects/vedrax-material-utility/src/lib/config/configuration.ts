@@ -47,6 +47,11 @@ export interface Configuration {
      */
     homePage: string;
 
+    /**
+     * The API base url
+     */
+    apiBaseUrl: string;
+
 }
 
 export const VEDRAX_CONFIG = new InjectionToken<Configuration>('VEDRAX_CONFIG');

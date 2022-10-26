@@ -66,4 +66,8 @@ export class ConfigService {
         return this.config.homePage ? this.config.homePage : '/';
     }
 
+    getAPIBaseUrl():string {
+        return this.config.apiBaseUrl ? this.config.apiBaseUrl : '/api';
+    }
+
 }
