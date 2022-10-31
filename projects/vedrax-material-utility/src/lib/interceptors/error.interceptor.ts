@@ -1,6 +1,5 @@
 import { Injectable, Injector } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpErrorResponse, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { Router } from '@angular/router';
 import { Observable, throwError, of } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { AuthenticationService, SnackbarService } from '../services';

@@ -26,7 +26,7 @@ import { VedraxValidationComponent,
   VedraxFormControlComponent, 
   VedraxControlsComponent 
 } from './components';
-import { errorInterceptorProvider } from './interceptors';
+import { errorInterceptorProvider, jwtInterceptorProvider, loaderInterceptorProvider } from './interceptors';
 
 @NgModule({
   declarations: [
@@ -74,7 +74,9 @@ import { errorInterceptorProvider } from './interceptors';
   ],
   providers: [
     ConfigService,
-    errorInterceptorProvider
+    errorInterceptorProvider,
+    jwtInterceptorProvider,
+    loaderInterceptorProvider
   ]
 })
 export class VedraxMaterialUtilityModule {
