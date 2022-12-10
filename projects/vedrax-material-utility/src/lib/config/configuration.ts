@@ -10,47 +10,47 @@ export interface Configuration {
     /**
      * The form component appearance (fill or outline)
      */
-    formComponentAppearance : MatFormFieldAppearance;
+    formComponentAppearance?: MatFormFieldAppearance;
 
     /**
      * Snack bar horizontal position
      */
-    snackBarHorizontalPosition: MatSnackBarHorizontalPosition;
+    snackBarHorizontalPosition?: MatSnackBarHorizontalPosition;
 
     /**
      * Snack bar vertical position
      */
-    snackBarVerticalPosition: MatSnackBarVerticalPosition;
+    snackBarVerticalPosition?: MatSnackBarVerticalPosition;
 
     /**
      * Snack bar duration
      */
-    snackBarDuration: number;
+    snackBarDuration?: number;
 
     /**
      * The login endpoint
      */
-    loginEndpoint: string;
+    loginEndpoint?: string;
 
     /**
      * The verify email address endpoint
      */
-    verifyEmailAddressEndpoint: string;
+    verifyEmailAddressEndpoint?: string;
 
     /**
      * The redirection page used when no permission
      */
-    redirectionPageWhenNoPermission: string;
+    redirectionPageWhenNoPermission?: string;
 
     /**
      * The home page
      */
-    homePage: string;
+    homePage?: string;
 
     /**
      * The API base url
      */
-    apiBaseUrl: string;
+    apiBaseUrl?: string;
 
 }
 
